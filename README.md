@@ -1,7 +1,59 @@
-# GitHub Codespaces ♥️ Jupyter Notebooks
+# Codespaces Jupyter Workspace
 
-Welcome to your shiny new codespace! We've got everything fired up and running for you to explore Python and Jupyter notebooks.
+This repository contains a lightweight Jupyter workspace for data exploration and image-classification experiments.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with what you're seeing right now - where you go from here is up to you!
+## Environment
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+- Python: 3.14.3
+- Key libraries: ipywidgets, matplotlib, pandas, torch, torchvision, tqdm, pillow
+- Dependency file: requirements.txt
+
+## Project Structure
+
+- notebooks/population.ipynb: population data analysis
+- notebooks/matplotlib.ipynb: plotting and visualization examples
+- notebooks/image-classifier.ipynb: image classification workflow using PyTorch
+- data/atlantis.csv: sample dataset used by notebooks
+
+## Quick Start (Codespaces)
+
+1. Open this repository in GitHub Codespaces.
+2. Rebuild the container after configuration changes:
+	- Command Palette -> Dev Containers: Rebuild Container
+3. Verify Python version:
+
+```bash
+python --version
+```
+
+4. Install dependencies (if not already installed by container hooks):
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+5. Open any notebook in notebooks/ and run cells.
+
+## Quick Start (Local)
+
+1. Install Python 3.14.3.
+2. Create and activate a virtual environment.
+3. Install dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+4. Launch Jupyter:
+
+```bash
+jupyter notebook
+```
+
+5. Open notebooks/ in the browser UI.
+
+## Notes
+
+- Package versions are pinned for reproducibility.
+- torch and torchvision should be kept in compatible version pairs.
+- If a notebook kernel does not appear, reopen the notebook and select the Python interpreter for this environment.
