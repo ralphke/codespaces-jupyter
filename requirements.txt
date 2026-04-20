@@ -4,6 +4,6 @@ pandas==3.0.1
 torch==2.11.0
 torchvision==0.26.0
 tqdm==4.67.3
-pillow==12.1.1
+pillow==12.2.0
 fonttools==4.62.1
 filelock==3.25.2
